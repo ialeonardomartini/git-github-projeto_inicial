@@ -60,8 +60,8 @@ git reset --hard {ID do commit anterior como backup}
 
 ### amemd em um commit
 
->Utilizado para alterar a mensagem do ultimo commit sem precisar criar um novo
->Utilizado tambem para adicionar arquivos que foram esquecidos no commit anterior
+- >Utilizado para alterar a mensagem do ultimo commit sem precisar criar um novo
+- >Utilizado tambem para adicionar arquivos que foram esquecidos no commit anterior
 
 ```
 git commit --amemd -m "nova mensagem"
@@ -69,7 +69,7 @@ git commit --amemd -m "nova mensagem"
 
 ## Dominando controle de versão de código
 
->HEAD é o commit mais recent da branch atual
+- >HEAD é o commit mais recent da branch atual
 
 ### comandos e parametros do log
 
@@ -92,7 +92,7 @@ git show --help
 
 ### Comando diff
 
->Este comando é fundamental para visualizar as diferenças entre o estado atual do código e o último commit. Ele mostra as alterações feitas nos arquivos que ainda não foram adicionados ao stage.
+- >Este comando é fundamental para visualizar as diferenças entre o estado atual do código e o último commit. Ele mostra as alterações feitas nos arquivos que ainda não foram adicionados ao stage.
 
 ```
 git diff # diferença entre as modificações atuais para a HEAD
