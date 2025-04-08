@@ -23,14 +23,21 @@ git clone URL(do repositorio do github)
 - Todo commit conta com um id único e traz uma referência aos commits anteriores
 
 ```
-git status
-git add .
-git commit -m "mensagem contexto de commits"
+git status #verificar quais arquivos foram modificados
+git add . #adicionar mudanças
+git commit -m "mensagem contexto de commits" #registrar as mudanças no repositorio
 ```
 
 ## Enviar commits para o github
 
 ```
 git remote
-git push origin main
+git push origin main #subir as mudanças para o repositorio
 ```
+
+## pull para baixar novos commits
+
+```
+git pull origin main #baixar as mudanças para o repositorio local
+```
+
