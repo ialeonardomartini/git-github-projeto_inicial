@@ -32,5 +32,5 @@ git commit -m "mensagem contexto de commits"
 
 ```
 git remote
-push origin main
+git push origin main
 ```
