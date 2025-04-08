@@ -20,9 +20,11 @@ git clone {URL do repositorio do github}
 
 ### Commit
 
->Deve ser realizado sempre que concluir uma tarefa especifica ou resolver algum bug
->O controle de mudanças do Git é feito através dos commits
->Todo commit conta com um id único e traz uma referência aos commits anteriores
+- >Deve ser realizado sempre que concluir uma tarefa especifica ou resolver algum bug
+
+- >O controle de mudanças do Git é feito através dos commits
+
+- >Todo commit conta com um id único e traz uma referência aos commits anteriores
 
 ```
 git status #verificar quais arquivos foram modificados
