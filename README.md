@@ -1,7 +1,7 @@
 # Meu primeiro contato com git e github
 
 ## Compartilhando e Colaborando em projetos
-#### Comandos iniciais após criado o repositório
+### Comandos iniciais após criado o repositório
 
 ```
 git init
@@ -12,13 +12,13 @@ git remote add origin git@github.com:ialeonardomartini/git-github-projeto_inicia
 git push -u origin main
 ```
 
-#### Clonando um repositorio
+### Clonando um repositorio
 
 ```
 git clone {URL do repositorio do github}
 ```
 
-#### Commit
+### Commit
 
 - >Deve ser realizado sempre que concluir uma tarefa especifica ou resolver algum bug
 
@@ -32,33 +32,33 @@ git add . #adicionar mudanças
 git commit -m "mensagem contexto de commits" #registrar as mudanças no repositorio
 ```
 
-#### Enviar commits para o github
+### Enviar commits para o github
 
 ```
 git remote
 git push origin main #subir as mudanças para o repositorio
 ```
 
-#### pull para baixar novos commits
+### pull para baixar novos commits
 
 ```
 git pull origin main #baixar as mudanças para o repositorio local
 ```
 
-#### Desfazendo um commit
+### Desfazendo um commit
 
 ```
 git log
 git revert {ID do commit}
 ```
 
-#### Resetar um commit
+### Resetar um commit
 
 ```
 git reset --hard {ID do commit anterior como backup}
 ```
 
-#### amemd em um commit
+### amemd em um commit
 
 - >Utilizado para alterar a mensagem do ultimo commit sem precisar criar um novo
 - >Utilizado tambem para adicionar arquivos que foram esquecidos no commit anterior
@@ -71,7 +71,7 @@ git commit --amemd -m "nova mensagem"
 
 - >HEAD é o commit mais recent da branch atual
 
-#### comandos e parametros do log
+### comandos e parametros do log
 
 ```
 git log --oneline #log resumido em uma linha
@@ -82,7 +82,7 @@ git log --format
 git log --help (para pretty e format, que são as mesmas coisas)
 ```
 
-#### Vendo alterações de um commit especifico
+### Vendo alterações de um commit especifico
 
 ```
 git show #detalhes do ultimo commit HEAD
@@ -90,12 +90,12 @@ git show {hash do commit}
 git show --help
 ```
 
-#### Comando diff
+### Comando diff
 
 - >Este comando é fundamental para visualizar as diferenças entre o estado atual do código e o último commit. Ele mostra as alterações feitas nos arquivos que ainda não foram adicionados ao stage.
 
 ```
-git diff # diferença entre as modificações atuais para a HEAD
+git diff #diferença entre as modificações atuais para a HEAD
 git diff {hash commit mais antigo}..{hash commit mais novo} #diferença entre dois commits
 ```
 
@@ -105,7 +105,13 @@ git diff {hash commit mais antigo}..{hash commit mais novo} #diferença entre do
 
 ```
 git branch #quais são os branchs existentes no trabalho
-git branch {nome do novo branch} # cria uma nova branch
+git branch {nome do novo branch} #cria uma nova branch
 git switch {nome do branch} #altera para a branch selecionada
 git switch -c 'nova-branch' #cria uma nova branch e ja torna local de trabalho
+bit branch -d {nome da branch} #para excluir uma branch
 ```
+
+### unindo as branchs
+
+```
+git merge {nome da branch}
