@@ -109,6 +109,7 @@ git branch {nome do novo branch} #cria uma nova branch
 git switch {nome do branch} #altera para a branch selecionada
 git switch -c 'nova-branch' #cria uma nova branch e ja torna local de trabalho
 bit branch -d {nome da branch} #para excluir uma branch
+git push origin :{nome da branch} #para excluir a branch do github
 ```
 
 ### unindo as branchs
@@ -116,5 +117,3 @@ bit branch -d {nome da branch} #para excluir uma branch
 ```
 git merge {nome da branch}
 ```
-
-this is only a test
