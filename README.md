@@ -117,4 +117,4 @@ bit branch -d {nome da branch} #para excluir uma branch
 git merge {nome da branch}
 ```
 
-this is a test
+this is only a test
