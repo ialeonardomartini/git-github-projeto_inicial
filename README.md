@@ -117,3 +117,11 @@ git push origin :{nome da branch} #para excluir a branch do github
 ```
 git merge {nome da branch}
 ```
+
+### comando rebase
+
+- >É utilizado para integrar as alterações de uma branch em outra de uma maneira que mantém um histórico linear, ao contrário do merge, que pode criar um histórico mais complexo com commits de merge.
+
+````
+git rebase main
+```
