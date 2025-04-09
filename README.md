@@ -122,6 +122,45 @@ git merge {nome da branch}
 
 - >É utilizado para integrar as alterações de uma branch em outra de uma maneira que mantém um histórico linear, ao contrário do merge, que pode criar um histórico mais complexo com commits de merge.
 
-````
+```
 git rebase main
+```
+
+### comando stash
+
+- >Permite guardar alterações temporariamente sem criar um commit. Isso é útil quando o código não está em um estado funcional, e precisamos mudar de foco rapidamente.
+
+```
+git stash #armazena as modificações feitas
+git stash pop #aplica a ultima modificação armazenadas (indice na frente do pop aplica com o indice da lista e remove da lista)
+git stash list
+git stash clear
+git stash push -m "message content"
+git stash apply {indice do stash list} #aplica a modificação armazenada desejada de acordo com o indice da lista
+git stash drop # remove o item da stash
+```
+
+### comando restore
+
+```
+git restore
+git restore --staged #staging area
+```
+
+### criando tags
+
+- >As tags funcionam como checkpoints em um jogo, permitindo que possamos marcar um estado específico do nosso código que queremos salvar e, se necessário, retornar a ele no futuro.
+
+```
+git tag {nome_da_tag}
+git tag {nome_da_tag} {ID_commit}
+git push origin {nome_da_tag}
+git push origin --tags
+```
+
+### criando annotated tags
+
+```
+git tag -a {nome_da_tag} -m "mensagem na tag"
+git tag -v {nome_da_tag} #tras os informações da tag
 ```
