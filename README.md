@@ -64,7 +64,7 @@ git reset --hard {ID do commit anterior como backup}
 - >Utilizado tambem para adicionar arquivos que foram esquecidos no commit anterior
 
 ```
-git commit --amemd -m "nova mensagem"
+git commit --amend -m "nova mensagem"
 ```
 
 ## Dominando controle de versão de código
